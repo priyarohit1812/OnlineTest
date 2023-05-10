@@ -1,0 +1,16 @@
+
+<div class="card mt-2">
+    <div class="card-body">
+        <div class="row">
+            <label class="col-md-10">Question: {{question.text}}</label>                                            
+            <label class="col-md-2">Score: {{question.score}}</label>                                            
+        </div>               
+        <form [formGroup]="quizQuestionForm">
+            <div *ngFor="let opt of question.options">
+                <input type="radio" value="{{opt.code}}" formControlName="option">
+                  <span>&nbsp;&nbsp;&nbsp;{{opt.code}} - {{opt.text}}</span>
+            </div>
+        </form>
+    </div>
+</div>
+

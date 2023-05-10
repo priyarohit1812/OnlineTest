@@ -1,0 +1,41 @@
+<div class="container-fluid " style="margin-top: 50px;">
+    <div class="row justify-content-center">
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-info">
+                    <b>Login Here</b>
+                </div>
+                <div class="card-body">
+
+                    <form [formGroup]="loginFrom" (ngSubmit)="login()">
+                        <label>Username</label>
+                        <input type="username" formControlName="username" class="form-control" />
+                        <span class="errorinfo"
+                            *ngIf="loginFrom.controls.username.touched && loginFrom.controls.username.invalid">
+                            <b>Please enter username</b>
+                        </span>
+                        <br />
+
+                        <label>Password</label>
+                        <input type="password" formControlName="password" class="form-control" />
+                        <span class="errorinfo"
+                            *ngIf="loginFrom.controls.password.touched && loginFrom.controls.password.invalid">
+                            <b>Please enter password</b>
+                        </span>
+
+                        <br />
+                        <input type="submit" value="Login" class="btn btn-success" [disabled]="loginFrom.invalid" />
+                        &nbsp;&nbsp;&nbsp;
+                        <a routerLink="/user/register" class="btn btn-seconery">Register</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a routerLink="/admin/login" class="btn btn-warning">Admin Login</a>   
+                         
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,522 @@
+{
+  "quizes": [
+    {
+      "id": 1,
+      "code": "AZ-200",
+      "name": "Azure Fundamental",
+      "totalScore": 100,
+      "passingScore": 40,
+      "questions": [
+        {
+          "id": 1,
+          "code": "AZ-200-1",
+          "text": "In which year was Azure launched?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "2011"
+            },
+            {
+              "code": "Option-B",
+              "text": "2012"
+            },
+            {
+              "code": "Option-C",
+              "text": "2013"
+            },
+            {
+              "code": "Option-D",
+              "text": "2010"
+            }
+          ],
+          "answer": "Option-A"
+        },
+        {
+          "id": 2,
+          "code": "AZ-200-2",
+          "text": "Which service in Azure is used to manage resources in Azure?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "Azure Portal"
+            },
+            {
+              "code": "Option-B",
+              "text": "Log Analytics"
+            },
+            {
+              "code": "Option-C",
+              "text": "Application Insights"
+            },
+            {
+              "code": "Option-D",
+              "text": "Azure Resource Manager"
+            }
+          ],
+          "answer": "Option-D"
+        },
+        {
+          "id": 3,
+          "code": "AZ-200-3",
+          "text": "Which of the following web applications can be deployed with Azure?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "PHP"
+            },
+            {
+              "code": "Option-B",
+              "text": "WCF"
+            },
+            {
+              "code": "Option-C",
+              "text": "ASP.NET"
+            },
+            {
+              "code": "Option-D",
+              "text": "All of the above"
+            }
+          ],
+          "answer": "Option-D"
+        },
+        {
+          "id": 4,
+          "code": "AZ-200-4",
+          "text": "A _________ role is a virtual machine instance running Microsoft IIS Web server that can accept and respond to HTTP or HTTPS requests.",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "Client"
+            },
+            {
+              "code": "Option-B",
+              "text": "Server"
+            },
+            {
+              "code": "Option-C",
+              "text": "Web"
+            },
+            {
+              "code": "Option-D",
+              "text": "Worker"
+            }
+          ],
+          "answer": "Option-C"
+        },
+        {
+          "id": 5,
+          "code": "AZ-200-5",
+          "text": "Azure storage is similar to what component of AWS (Amazon Web Services)?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "EC2"
+            },
+            {
+              "code": "Option-B",
+              "text": "EC3"
+            },
+            {
+              "code": "Option-C",
+              "text": "S3"
+            },
+            {
+              "code": "Option-D",
+              "text": "None of the above"
+            }
+          ],
+          "answer": "Option-C"
+        },
+        {
+          "id": 6,
+          "code": "AZ-200-6",
+          "text": "Azure storage services and VMs belong to which cloud computing models?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "PaaS"
+            },
+            {
+              "code": "Option-B",
+              "text": "IaaS"
+            },
+            {
+              "code": "Option-C",
+              "text": "SaaS"
+            },
+            {
+              "code": "Option-D",
+              "text": "All of the above"
+            }
+          ],
+          "answer": "Option-B"
+        },
+        {
+          "id": 7,
+          "code": "AZ-200-7",
+          "text": "7 .Which Azure service helps to deploy and manage enterprise-level applications with hybrid cloud architecture?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "Azure Stack"
+            },
+            {
+              "code": "Option-B",
+              "text": "Azure Pack"
+            },
+            {
+              "code": "Option-C",
+              "text": "Azure Blob"
+            },
+            {
+              "code": "Option-D",
+              "text": "Azure Hybrid"
+            }
+          ],
+          "answer": "Option-A"
+        },
+        {
+          "id": 8,
+          "code": "AZ-200-8",
+          "text": "8 .What role does the task of running background tasks and applications that don't need IIS?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "VM"
+            },
+            {
+              "code": "Option-B",
+              "text": "Worker"
+            },
+            {
+              "code": "Option-C",
+              "text": "Web"
+            },
+            {
+              "code": "Option-D",
+              "text": "None of the Above"
+            }
+          ],
+          "answer": "Option-B"
+        },
+        {
+          "id": 9,
+          "code": "AZ-200-9",
+          "text": "What are the service components of Azure Cognitive Services?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "Vision, Speech, Language, Search and Decision"
+            },
+            {
+              "code": "Option-B",
+              "text": "Speech, Language, Search, Video and Translation"
+            },
+            {
+              "code": "Option-C",
+              "text": "Language, Translation, Vision, Knowledge, and Audio"
+            },
+            {
+              "code": "Option-D",
+              "text": "Knowledge, Translation, Audio, Visual, and Speech"
+            }
+          ],
+          "answer": "Option-D"
+        },
+        {
+          "id": 10,
+          "code": "AZ-200-10",
+          "text": "Select the correct roles in Azure.",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "Admin Role, Web Role, OS Role"
+            },
+            {
+              "code": "Option-B",
+              "text": "Worker Role, Read Role, Write Role"
+            },
+            {
+              "code": "Option-C",
+              "text": "Web Role, Worker Role, VM Role"
+            },
+            {
+              "code": "Option-D",
+              "text": "None of the Above"
+            }
+          ],
+          "answer": "Option-C"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "code": "JV001",
+      "name": "Java core",
+      "totalScore": 100,
+      "passingScore": 40,
+      "questions": [
+        {
+          "id": 1,
+          "code": "JV001-1",
+          "text": "Who invented Java Programming?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "Guido van Rossum"
+            },
+            {
+              "code": "Option-B",
+              "text": "James Gosling"
+            },
+            {
+              "code": "Option-C",
+              "text": "Dennis Ritchie"
+            },
+            {
+              "code": "Option-D",
+              "text": "Bjarne Stroustrup"
+            }
+          ],
+          "answer": "Option-B"
+        },
+        {
+          "id": 2,
+          "code": "JV001-2",
+          "text": "Which statement is true about Java?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "Java is a sequence-dependent programming language"
+            },
+            {
+              "code": "Option-B",
+              "text": "Java is a code dependent programming language"
+            },
+            {
+              "code": "Option-C",
+              "text": "Java is a platform-dependent programming language"
+            },
+            {
+              "code": "Option-D",
+              "text": "Java is a platform-independent programming language"
+            }
+          ],
+          "answer": "Option-D"
+        },
+        {
+          "id": 3,
+          "code": "JV001-3",
+          "text": "Which component is used to compile, debug and execute the java programs?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "JRE"
+            },
+            {
+              "code": "Option-B",
+              "text": "JIT"
+            },
+            {
+              "code": "Option-C",
+              "text": "JDK"
+            },
+            {
+              "code": "Option-D",
+              "text": "JVM"
+            }
+          ],
+          "answer": "Option-C"
+        },
+        {
+          "id": 4,
+          "code": "JV001-4",
+          "text": "Which one of the following is not a Java feature?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "Object-oriented"
+            },
+            {
+              "code": "Option-B",
+              "text": "Use of pointers"
+            },
+            {
+              "code": "Option-C",
+              "text": "Portable"
+            },
+            {
+              "code": "Option-D",
+              "text": "Dynamic and Extensible"
+            }
+          ],
+          "answer": "Option-B"
+        },
+        {
+          "id": 5,
+          "code": "JV001-5",
+          "text": "Which of these cannot be used for a variable name in Java?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "identifier & keyword"
+            },
+            {
+              "code": "Option-B",
+              "text": "identifier"
+            },
+            {
+              "code": "Option-C",
+              "text": "keyword"
+            },
+            {
+              "code": "Option-D",
+              "text": "none of the mentioned"
+            }
+          ],
+          "answer": "Option-C"
+        },
+        {
+          "id": 6,
+          "code": "JV001-6",
+          "text": "What is the extension of java code files?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": ".js"
+            },
+            {
+              "code": "Option-B",
+              "text": ".txt"
+            },
+            {
+              "code": "Option-C",
+              "text": ".class"
+            },
+            {
+              "code": "Option-D",
+              "text": ".java"
+            }
+          ],
+          "answer": "Option-D"
+        },
+        {
+          "id": 7,
+          "code": "JV001-7",
+          "text": "Which environment variable is used to set the java path?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "MAVEN_Path"
+            },
+            {
+              "code": "Option-B",
+              "text": "JavaPATH"
+            },
+            {
+              "code": "Option-C",
+              "text": "JAVA"
+            },
+            {
+              "code": "Option-D",
+              "text": "JAVA_HOME"
+            }
+          ],
+          "answer": "Option-D"
+        },
+        {
+          "id": 8,
+          "code": "JV001-8",
+          "text": "Which of the following is not an OOPS concept in Java?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "Polymorphism"
+            },
+            {
+              "code": "Option-B",
+              "text": "Inheritance"
+            },
+            {
+              "code": "Option-C",
+              "text": "Compilation"
+            },
+            {
+              "code": "Option-D",
+              "text": "Encapsulation"
+            }
+          ],
+          "answer": "Option-C"
+        },
+        {
+          "id": 9,
+          "code": "JV001-9",
+          "text": "What is not the use of “this” keyword in Java?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": " Referring to the instance variable when a local variable has the same name"
+            },
+            {
+              "code": "Option-B",
+              "text": "Passing itself to the method of the same class"
+            },
+            {
+              "code": "Option-C",
+              "text": "Passing itself to another method"
+            },
+            {
+              "code": "Option-D",
+              "text": "Calling another constructor in constructor chaining"
+            }
+          ],
+          "answer": "Option-B"
+        },
+        {
+          "id": 10,
+          "code": "JV001-10",
+          "text": "Which of the following is a type of polymorphism in Java Programming?",
+          "score": 10,
+          "options": [
+            {
+              "code": "Option-A",
+              "text": "Multiple polymorphism"
+            },
+            {
+              "code": "Option-B",
+              "text": "Compile time polymorphism"
+            },
+            {
+              "code": "Option-C",
+              "text": "Multilevel polymorphism"
+            },
+            {
+              "code": "Option-D",
+              "text": "Execution time polymorphism"
+            }
+          ],
+          "answer": "Option-B"
+        }
+      ]
+    }
+  ]
+}

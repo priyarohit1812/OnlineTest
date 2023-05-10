@@ -1,0 +1,56 @@
+<app-navbar></app-navbar>
+<form [formGroup]="questionAnswerFrom">
+    <label>Question</label>
+    <input type="text" formControlName="question" class="form-control" />
+    <span class="errorinfo"
+        *ngIf="questionAnswerFrom.controls.question.touched && questionAnswerFrom.controls.question.invalid">
+        <b>Please enter question</b>
+    </span>
+
+    <label>Option-A</label>
+    <input type="text" formControlName="optionA" class="form-control" />
+    <span class="errorinfo"
+        *ngIf="questionAnswerFrom.controls.optionA.touched && questionAnswerFrom.controls.optionA.invalid">
+        <b>Please enter Option-A</b>
+    </span>
+
+    <label>Option-B</label>
+    <input type="text" formControlName="optionB" class="form-control" />
+    <span class="errorinfo"
+        *ngIf="questionAnswerFrom.controls.optionB.touched && questionAnswerFrom.controls.optionB.invalid">
+        <b>Please enter Option-B</b>
+    </span>
+
+    <label>Option-C</label>
+    <input type="text" formControlName="optionC" class="form-control" />
+    <span class="errorinfo"
+        *ngIf="questionAnswerFrom.controls.optionC.touched && questionAnswerFrom.controls.optionC.invalid">
+        <b>Please enter Option-C</b>
+    </span>
+
+    <label>Option-D</label>
+    <input type="text" formControlName="optionD" class="form-control" />
+    <span class="errorinfo"
+        *ngIf="questionAnswerFrom.controls.optionD.touched && questionAnswerFrom.controls.optionD.invalid">
+        <b>Please enter Option-D</b>
+    </span>
+
+    <label>Answer</label>
+    <select formControlName="answer" class="form-control">
+        <option *ngFor="let opt of options" [ngValue]="opt">
+            {{opt}}
+        </option>
+    </select>
+    <span class="errorinfo"
+        *ngIf="questionAnswerFrom.controls.answer.touched && questionAnswerFrom.controls.answer.invalid">
+        <b>Please select the Answer</b>
+    </span>
+
+    <label>Score</label>
+    <input type="number" formControlName="score" class="form-control" />
+    <span class="errorinfo"
+        *ngIf="questionAnswerFrom.controls.score.touched && questionAnswerFrom.controls.score.invalid">
+        <b>Please enter score</b>
+    </span>
+
+</form>

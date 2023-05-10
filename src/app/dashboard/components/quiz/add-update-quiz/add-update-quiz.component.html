@@ -1,0 +1,78 @@
+<app-navbar></app-navbar>
+<div class="container-fluid " style="margin-top: 50px;">
+    <div class="row justify-content-center">
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-info">
+                    <b>Quiz</b>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="quizForm">
+                        <label>Code</label>
+                        <input type="text" formControlName="code" class="form-control" />
+                        <span class="errorinfo"
+                            *ngIf="quizForm.controls.code.touched && quizForm.controls.code.invalid">
+                            <b>Please enter quiz code</b>
+                        </span>
+
+                        <label>Name</label>
+                        <input type="text" formControlName="name" class="form-control" />
+                        <span class="errorinfo"
+                            *ngIf="quizForm.controls.name.touched && quizForm.controls.name.invalid">
+                            <b>Please enter Quiz name</b>
+                        </span>
+
+                        <label>Passing score</label>
+                        <input type="number" formControlName="passingScore" class="form-control" />
+                        <span class="errorinfo"
+                            *ngIf="quizForm.controls.passingScore.touched && quizForm.controls.passingScore.invalid">
+                            <b>Please enter Passing score</b>
+                        </span>
+
+                        <label>Total score</label>
+                        <input type="number" formControlName="totalScore" class="form-control" />
+                        <span class="errorinfo"
+                            *ngIf="quizForm.controls.totalScore.touched && quizForm.controls.totalScore.invalid">
+                            <b>Please enter Total score</b>
+                        </span>
+                    </form>
+                    <div class="card mt-4">
+                        <div class="card-header bg-info">
+                            <div class="row">
+                                <b class="col-md-8">Questions</b>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card" *ngFor="let que of quiz.questions; let i = index;">
+                                <div class="card-header bg-info">
+                                    <div class="row">
+                                        <b class="col-md-8">Question: {{quiz.code}}-{{i+1}}</b>
+                                        <input type="button" value="Delete Question" class="col-md-4 btn btn-success"
+                                            (click)="deleteQuestion(i)" />
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <app-question-answer [index]="i+1" [quizCode]="quiz.code"
+                                        [question]="que"></app-question-answer>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-info">
+                            <div class="row">
+                                <b class="col-md-8"></b>
+                                <input type="button" value="Add Question" class="col-md-4 btn btn-success"
+                                    (click)="addQuestion()" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-info">
+                    <input type="button" value="Save Quiz" class="btn btn-success" (click)="saveQuiz()" />
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

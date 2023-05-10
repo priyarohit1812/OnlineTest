@@ -1,0 +1,7 @@
+{
+  "/quizes/list": "/quizes",
+  "/quizes/get/:id": "/quiz/:id",
+  "/quizes/create": "/quiz",
+  "/quizes/update/:id": "/quiz/:id",
+  "/quizes/delete/:id": "/quiz/:id"
+}

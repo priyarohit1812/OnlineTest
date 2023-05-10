@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+<div class="container-fluid " style="margin-top: 50px;">
+  <div class="row justify-content-center">
+
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header bg-info">
+          <div class="row">
+            <b class="col-md-10">Quiz</b>
+            <a *ngIf="is_admin" routerLink="/admin/quiz/new" class="col-md-2 btn btn-success">New Quiz</a>
+          </div>
+        </div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Total Score</th>
+                <th>Passing Score</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let quiz of quiz_list">
+                <td>{{ quiz.id }}</td>
+                <td>{{ quiz.code }}</td>
+                <td>{{ quiz.name }}</td>
+                <td>{{ quiz.totalScore }}</td>
+                <td>{{ quiz.passingScore }}</td>
+                <td *ngIf="!is_admin"><a routerLink="/user/quiz/attempt/{{quiz.id}}">Attempt</a></td>
+                <td *ngIf="is_admin"><a routerLink="/admin/quiz/{{quiz.id}}">Edit</a>|<a href="" (click)="deleteQuiz(quiz.id)">Delete</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

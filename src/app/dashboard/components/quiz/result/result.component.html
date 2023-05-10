@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<div class="container-fluid " style="margin-top: 50px;">
+    <div class="row justify-content-center">
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-info">
+                    <b *ngIf="result.isPass">Result : Pass</b>
+                    <b *ngIf="!result.isPass">Result : Fail</b>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        {{quiz.code}} - {{quiz.name}}
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">Total Marks: </div>
+                        <div class="col-md-2">{{quiz.totalScore}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">Passing Marks: </div>
+                        <div class="col-md-2">{{quiz.passingScore}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">Marks Obtained: </div>
+                        <div class="col-md-2">{{result.marksObtained}}</div>
+                    </div>                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

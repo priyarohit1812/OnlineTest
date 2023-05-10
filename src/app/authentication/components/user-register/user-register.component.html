@@ -1,0 +1,55 @@
+<div class="container-fluid " style="margin-top: 50px;">
+    <div class="row justify-content-center">
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-info">
+                    <b>Register Here</b>
+                </div>
+                <div class="card-body">
+
+                    <form [formGroup]="registerForm" (ngSubmit)="register()">                        
+                        <label>First Name</label>
+                        <input type="text" formControlName="firstname" class="form-control" />
+                        <span class="errorinfo"
+                            *ngIf="registerForm.controls.firstname.touched && registerForm.controls.firstname.invalid">
+                            <b>First Name is required</b>
+                        </span>
+
+                        <label>Last Name</label>
+                        <input type="text" formControlName="lastname" class="form-control" />
+
+                        <label>Email</label>
+                        <input type="email" formControlName="email" class="form-control" />
+                        <span class="errorinfo"
+                            *ngIf="registerForm.controls.email.touched && registerForm.controls.email.invalid">
+                            <b>Enter valid email</b>
+                        </span>
+
+                        <label>Mobile Number</label>
+                        <input type="text" formControlName="mobile" class="form-control" />
+                        <span class="errorinfo"
+                            *ngIf="registerForm.controls.mobile.touched && registerForm.controls.mobile.invalid">
+                            <b>Mobile Number is required</b>
+                        </span>
+
+                        <label>Password</label>
+                        <input type="password" formControlName="password" class="form-control" />
+                        <span class="errorinfo"
+                            *ngIf="registerForm.controls.password.touched && registerForm.controls.password.invalid">
+                            <b>Password is required</b>
+                        </span>
+                        
+                        <input type="submit" value="Register" class="btn btn-success"
+                            [disabled]="registerForm.invalid" />
+                        &nbsp;&nbsp;&nbsp;
+                        <a routerLink="" class="btn btn-warning">Back</a>
+                        
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
